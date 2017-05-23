@@ -146,9 +146,9 @@ gulp.task('devWatch', function () {
     gulp.watch('src/style/*.{less,css}', ['lessDev']);
 
     //html,js文件修改，重新拼接，刷新
-    gulp.watch(['src/script/*.js', 'src/view/*.html'], ["htmlDev"], ['jsDev']);
+    gulp.watch(['src/script/*.js', 'src/view/*.html'], ["htmlDev",'jsDev']);
 
 });
 
 
-gulp.task('.myServer', ['htmlDev', 'jsDev', 'lessDev','devWatch','serverDev'])
+gulp.task('.myServer', ['htmlDev', 'jsDev', 'lessDev','devWatch','serverDev']);
